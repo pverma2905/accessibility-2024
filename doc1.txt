@@ -1,0 +1,125 @@
+https://medium.com/@zmactavish/15-html-tags-for-accessibility-2738183cbc3
+1)ARIA labels
+<button aria-label="Close">X</button>
+
+<span id="logo">Be Accessible</span>
+<img src="logo.png" alt="" aria-labelledby="logo">
+
+<input type="text" id="phone" aria-describedby="phone-hint"> 
+<span id="phone-hint">Enter your phone number with country code</span>
+
+2) <fieldset> and <legend>
+<fieldset>
+  <legend>Contact preferences</legend>
+  <input type="checkbox" id="email" name="email">
+  <label for="email">Email me</label><br>
+  <input type="checkbox" id="phone" name="phone">
+  <label for="phone">Call me</label><br>
+  <input type="checkbox" id="text" name="text">
+  <label for="text">Text me</label><br>
+</fieldset>
+
+3)<label>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+
+4)Role attribute
+<a href="#" role="button">Button Link</a>
+
+5)alt attribute with <img>
+<img src="logo.png" alt="Be Accessible logo">
+
+6)<h1> to <h6>
+
+<h1>HTML Accessibility</h1>
+<h2>Semantic HTML</h2>
+<p>Semantic HTML means using correct HTML elements for their correct 
+purpose as much as possible.</p>
+<h3><button> Element</h3>
+<p>The <button> element defines a clickable button that can 
+be used to trigger an action or submit a form.</p>
+
+7)<table>, <th>, <tr>, and <td>
+
+<table summary="This table shows monthly sales figures by product category">
+  <tr>
+    <th scope="col">Category</th>
+    <th scope="col">January</th>
+    <th scope="col">February</th>
+    ...
+  </tr>
+  <tr>
+    <th scope="row">Books</th>
+    ...
+  </tr>
+
+  8)lang attribute
+
+  <html lang="en">
+
+  9)tabindex
+
+  <a href="#" tabindex="1">First link</a>
+
+  10)<caption>
+  <table> <caption><strong>Sales report for January 2023</strong> </caption> 
+<tr> <th>Product</th> <th>Sales</th> </tr> 
+<tr> <td>Coffee</td> <td>$5000</td> </tr> 
+<tr> <td>Tea</td> <td>$3000</td> </tr> 
+<tr> <td>Milk</td> <td>$2000</td> </tr> 
+</table>
+
+11)<figure> and <figcaption>
+<figure> <img src="logo.png" alt="Octobot logo"> 
+<figcaption>The logo of Octobot</figcaption> 
+</figure>
+
+12) <abbr>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+</p>
+
+13) <button>
+<button>Submit</button>
+
+<div role="button" 
+tabindex="0" 
+aria-label="Close" 
+onclick="closeWindow()" 
+onkeydown="handleKey(event)">
+  <img src="close-icon.png" alt="">
+</div>
+
+<script>
+  function closeWindow() {
+    // code to close the window
+  }
+  function handleKey(event) {
+    if (event.keyCode === 13 || event.keyCode === 32) {
+      // Enter or Spacebar pressed
+      closeWindow();
+    }
+  }
+</script>
+
+14) <nav>
+
+<nav aria-labelledby="main-nav">
+  <h2 id="main-nav">Main navigation</h2>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+15)<audio> and <video>
+<audio src="podcast.mp3" controls>
+  Your browser does not support the audio element.
+  <track src="podcast.vtt" kind="captions" srclang="en" label="English">
+</audio>
+
+<video src="demo.mp4" controls>
+  Your browser does not support the video element.
+  <track src="demo.vtt" kind="captions" srclang="en" label="English">
+  <track src="demo.ad.vtt" kind="descriptions" srclang="en" label="English">
+</video>

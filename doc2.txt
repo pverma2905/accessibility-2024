@@ -1,0 +1,32 @@
+1)role="navigation": This attribute is used to indicate that a section of the page contains navigation links. Screen readers will announce this section as a navigation region, making it easier for users to navigate through the site.
+
+<nav role="navigation">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+2)aria-label="": This attribute is used to provide a custom label for an element. For example, you can use aria-label to provide a descriptive label for an icon that doesn't have any text.
+
+<img src="example.jpg" alt="" aria-label="A group of people enjoying a picnic in the park">
+
+3)role="button": This attribute is used to indicate that an element functions as a button. This is useful for users who navigate the web using a keyboard or other assistive technology.
+
+<div role="button" tabindex="0" onclick="doSomething()">Click me</div>
+
+
+4)aria-describedby="": This attribute is used to provide additional information about an element. For example, you can use aria-describedby to provide a more detailed description of a form field.
+
+<label for="username">Username:</label>
+<input type="text" id="username" aria-describedby="username-help">
+
+<div id="username-help">Please enter your username. It should be between 6 and 20 characters long.</div>
+
+
+5)role="alert": This attribute is used to indicate that an element contains important or time-sensitive information. Screen readers will announce this element as an alert, making it clear to the user that they should pay attention to it.
+
+<div role="alert">
+<p>There was an error processing your request. Please try again later.</p>
+</div>

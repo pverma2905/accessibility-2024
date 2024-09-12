@@ -1,0 +1,5 @@
+1)img
+
+=>alt
+<img src="dddddddd.jpg" aria-labelledby="abc">
+ <p id="abc">..........................</p>

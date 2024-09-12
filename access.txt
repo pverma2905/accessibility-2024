@@ -1,0 +1,10 @@
+tab:- move forward
+shif+tab:- move backward
+
+Turn on NVDA: Ctrl + Alt + N
+Turn off NVDA: Insert + Q
+Navigate through headings: H (next heading), Shift + H (previous heading)
+Navigate through links: K (next link), Shift + K (previous link)
+Read the current item: NVDA + Down Arrow
+Read the entire page: NVDA + A
+Go to the next form field: F (next form element), Shift + F (previous form element)
